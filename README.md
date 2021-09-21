@@ -7,13 +7,14 @@ Inspired by leprosorium.ru users.
 
 Tested on CentOS 7 (for **Ubuntu/Debian** replace `yum` with `apt-get` below):
 
-```
-yum install redis python-virtualenv
+``` 
+python3 -m pip install redis
+yum install redis python3-virtualenv
 git clone https://github.com/br0ziliy/telegram-karma-bot.git
 cd ./telegram-karma-bot
-virtualenv python
-source python/bin/activate
-pip install telepot
+virtualenv python3
+source python3/bin/activate
+pip3 install telepot
 ```
 
 Now go and talk to `@BotFather` bot in your Telegram client to create your own
@@ -33,7 +34,7 @@ systemctl start redis
 Run the bot:
 
 ```
-python bot.py
+python3 bot.py
 ```
 
 That's it!
